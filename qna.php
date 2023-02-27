@@ -32,5 +32,5 @@ include('partials/header.php');
   </div>
   </main>
   <?php
-include('partials/header.php');
+include('partials/footer.php');
 ?>
