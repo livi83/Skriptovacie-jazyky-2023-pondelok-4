@@ -31,5 +31,6 @@
     </div>
   </footer>
 <script src="js/app.js"></script>
+<script src="js/accordion.js"></script>
 </body>
 </html>
