@@ -8,17 +8,28 @@
       </div>
       <div class="col-25">
         <h4>Kontaktujte nás</h4>
+        <?php
+          $email = "livia.kelebercova@gmail.com";
+          $tel = "0909500600";
+        ?>
         <ul>
-          <li><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:livia.kelebercova@gmail.com"> livia.kelebercova@gmail.com</a></i></li>
-          <li><i class="fa fa-phone" aria-hidden="true"><a href="tel:0909500600"> 0909500600</a></i></li>
+          <?php
+          echo '<li><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:'.$email.'">'.$email.'</a></i></li>';
+          echo '<li><i class="fa fa-phone" aria-hidden="true"><a href="tel:'.$tel.'"> '.$tel.'</a></i></li>';   
+          ?>
         </ul>
       </div>
       <div class="col-25">
         <h4>Rýchle odkazy</h4>
         <ul>
-          <li><a href="/">Domov</a></li>
-          <li><a href="/qna">Q&A</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
+        <?php
+          foreach($pages as $file){
+            $page = basename($file,'.php');
+            if($page!=='index'){
+              echo '<li><a href="'.$file.'">'.ucfirst($page).'</a></li>';
+            }
+          }
+        ?>    
         </ul>
       </div>
       <div class="col-25">
@@ -27,7 +38,7 @@
        </div>
     </div>
     <div class="row">
-      Created and designed by Lívia
+      Created and designed by Lívia <?php echo date("Y"); ?> 
     </div>
   </footer>
 <script src="js/app.js"></script>

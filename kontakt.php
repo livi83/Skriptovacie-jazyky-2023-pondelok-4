@@ -7,14 +7,9 @@ include('partials/header.php');
         <h1>Kontakt</h1>
       </div>
     </section>
-    <section>
-      <div class="container">
-        <div class="col-100 text-center">
-          <p><strong><em>Elit culpa id mollit irure sit. Ex ut et ea esse culpa officia ea incididunt elit velit veniam qui. Mollit deserunt culpa incididunt laborum commodo in culpa.</em
-          ></strong></p>
-        </div>
-      </div>
-    </section>
+    <?php
+      include('partials/quote.php');
+    ?>
     <section class="container">
       <div class="row">
         <div class="col-50"> 
@@ -25,14 +20,9 @@ include('partials/header.php');
         </div>
         <div class="col-50 text-right">
           <h3>Napíšte nám</h3>
-          <form id="contact" action="">
-            <input type="text" placeholder="Vaše meno" id ="meno"  required><br>
-            <input type="email" placeholder="Váš email" id="email" required><br>
-            <textarea name="" placeholder="Vaša správa" id="sprava"></textarea><br>
-            <input type="checkbox" name="" id="" required><label for=""> Súhlasím so spracovaním osobných údajov.</label><br>
-            <input type="submit" value="Odoslať">
-          </form>
-          <div id="error" class="text-red">
+          <?php
+            include('partials/form.php');
+          ?>
             
           </div>
         </div>
