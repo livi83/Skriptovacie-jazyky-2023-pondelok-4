@@ -26,7 +26,7 @@
         <h4>Rýchle odkazy</h4>
         <ul>
         <?php
-          menu();
+          page_menu();
         ?>    
         </ul>
       </div>

@@ -24,7 +24,7 @@
     <nav class="main-nav">
       <ul class="main-menu" id="main-menu container">
        <?php
-        menu();
+        page_menu();
        ?>        
       </ul>
       <a class="hamburger" id="hamburger">
