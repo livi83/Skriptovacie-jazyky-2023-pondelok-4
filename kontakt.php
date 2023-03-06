@@ -2,12 +2,8 @@
 include('partials/header.php');
 ?>
   <main>
-    <section class="banner">
-      <div class="container text-white">
-        <h1>Kontakt</h1>
-      </div>
-    </section>
     <?php
+      include('partials/banner.php');
       include('partials/quote.php');
     ?>
     <section class="container">

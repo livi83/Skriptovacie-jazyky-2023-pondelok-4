@@ -1,3 +1,6 @@
+<?php
+  include_once('inc/functions.php');
+?>
 <footer class="container bg-dark text-white">
     <div class="row">
       <div class="col-25">
@@ -23,12 +26,7 @@
         <h4>Rýchle odkazy</h4>
         <ul>
         <?php
-          foreach($pages as $file){
-            $page = basename($file,'.php');
-            if($page!=='index'){
-              echo '<li><a href="'.$file.'">'.ucfirst($page).'</a></li>';
-            }
-          }
+          page_menu();
         ?>    
         </ul>
       </div>

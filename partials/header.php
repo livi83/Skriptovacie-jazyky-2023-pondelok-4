@@ -1,4 +1,7 @@
 
+<?php
+  include_once('inc/functions.php');
+?>
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -19,19 +22,10 @@
       </div>
 
     <nav class="main-nav">
-      <?php
-        $pages = glob('*php');
-        //print_r($pages);
-      ?>
       <ul class="main-menu" id="main-menu container">
-        <?php
-          foreach($pages as $file){
-            $page = basename($file,'.php');
-            if($page!=='index'){
-              echo '<li><a href="'.$file.'">'.ucfirst($page).'</a></li>';
-            }
-          }
-        ?>        
+       <?php
+        page_menu();
+       ?>        
       </ul>
       <a class="hamburger" id="hamburger">
         <i class="fa fa-bars"></i>

@@ -3,12 +3,8 @@
     include('partials/header.php');
   ?>
   <main>
-    <section class="banner">
-        <div class="container text-white">
-            <h1>Webové stránky na mieru</h1>
-        </div>
-    </section>
     <?php
+      include('partials/banner.php');
       include('partials/quote.php');
     ?>
     <section class="container">
