@@ -38,16 +38,14 @@ function page_menu(){
     $pages = glob('*php');
     foreach($pages as $file){
         $page = basename($file,'.php');
-        if($page!=='404'){
-            if($page!=='index'){
+        if($page!=='index'){
             echo '<li><a href="'.$file.'">'.ucfirst($page).'</a></li>';
-            }
-            if($page=='index'){
-                echo '<li><a href="'.$file.'">'.'Domov'.'</a></li>';
-            }
+        }
+        if($page=='index'){
+            echo '<li><a href="'.$file.'">'.'Domov'.'</a></li>';
+        }
         }
     }
-}
 
 /**
  * portfolio 
