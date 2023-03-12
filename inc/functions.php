@@ -34,9 +34,7 @@ function page_quote(){
 /** 
  * Vypíše menu
 */
-
 function page_menu(){    
-
     $pages = glob('*php');
     foreach($pages as $file){
         $page = basename($file,'.php');
