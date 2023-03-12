@@ -1,6 +1,3 @@
-<?php
-  include_once('inc/functions.php');
-?>
 <footer class="container bg-dark text-white">
     <div class="row">
       <div class="col-25">
