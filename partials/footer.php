@@ -23,7 +23,8 @@
         <h4>Rýchle odkazy</h4>
         <ul>
         <?php
-          page_menu();
+          //page_menu();
+          print_menu($Footer_menu);
         ?>    
         </ul>
       </div>

@@ -1,6 +1,6 @@
 
 <?php
-  include_once('inc/functions.php');
+ include('inc/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="sk">
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja stránka</title>
+    <title><?php echo $page_title.' | '.ucfirst($Page->get_file_name()); ?></title>
     <link rel="stylesheet" href="css/accordion.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,8 @@
     <nav class="main-nav">
       <ul class="main-menu" id="main-menu container">
        <?php
-        page_menu();
+        //page_menu();
+        print_menu($Header_menu);
        ?>        
       </ul>
       <a class="hamburger" id="hamburger">
