@@ -8,7 +8,8 @@ include('partials/header.php');
     ?>
     <section class="container">
         <?php
-            portfolio();
+            //portfolio();
+            $Portfolio->get_portfolio(8);
         ?>       
     </section>
 </main>
